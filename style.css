@@ -31,7 +31,7 @@ body {
 .shopped-items {
   height: 500px;
   width: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .shopped-item {
@@ -42,6 +42,7 @@ body {
   gap: 15px;
   word-break: break-all;
   white-space: normal;
+  align-items: center;
 }
 
 .p-remove {
@@ -50,7 +51,7 @@ body {
 }
 
 .p-remove:hover {
-  transform: scale(1.1);
+  opacity: 80%;
 }
 
 .iconCross {
@@ -134,8 +135,6 @@ header .iconShop:hover {
 /* MAIN SECTION */
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
   padding: 30px;
 }
 

@@ -122,6 +122,9 @@ function renderShoppedProducts(shoppedProducts) {
       console.log(index);
       shoppedProducts.splice(index, 1);
       renderShoppedProducts(shoppedProducts);
+      if (shoppedProducts.length == 0) {
+        totalPrice.textContent = "$" + 0;
+      }
     });
     shoppedItem.appendChild(newPRemove);
 
