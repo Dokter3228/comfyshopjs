@@ -72,6 +72,13 @@ function renderProducts(products) {
     newSvg.addEventListener("click", (e) => {
       shoppedProducts.push(product);
       renderShoppedProducts(shoppedProducts);
+      if (!newSvg.classList.value.includes("animated")) {
+        newSvg.classList.toggle("animated");
+        newSvg.classList.toggle("bounce");
+        setTimeout(() => {
+          newSvg.classList = "iconBuy";
+        }, 1000);
+      }
     });
     newMiddle.appendChild(newSvg);
 
